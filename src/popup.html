@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;1,700&display=swap');
+  </style> 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SushiSwap Gas Foresight</title>
@@ -8,47 +12,54 @@
     <script type="text/javascript" src="./popup.js"></script>
   </head>
 
+  <!-- 
+
+    🍣 ⚠️ 🚧. 🍶 🉐  🆘  ✅ 🚦 ❎ 🈂️
+ 🆘  ✅ 🚦 ❎ 🈂️ 
+
+  -->
   <body>
     <div id="display-gas-prices">
       <ul>
         <li id="rapid">
           <div class="left">
-            <p>Critical Priority</p>
+            <p> 🆘 </p>
             <strong id="price-rapid">..</strong>
           </div>
           <div class="right">
-            <span><strong>Next 60 seconds</strong></span>
+            <span><strong>92.87%</strong></span>
           </div>
         </li>
         <li id="fast">
           <div class="left">
-            <p>Within seconds</p>
+            <p> 🆗 </p>
             <strong id="price-fast">..</strong>
           </div>
           <div class="right">
-            <span><strong>Less than 180 seconds</strong></span>
+            <span><strong>83.44%</strong></span>
           </div>
         </li>
         <li id="standard">
           <div class="left">
-            <p>Within minutes</p>
+            <p>✅ 🍣</p>
             <strong id="price-standard">..</strong>
           </div>
           <div class="right">
-            <span><strong>Less than 5 Minutes</strong></span>
+            <span><strong>77.9%</strong></span>
           </div>
         </li>
         <li id="slow">
+
           <div class="left">
-            <p>Low Priority</p>
+            <p> 🅿️ </p>
             <strong id="price-slow">..</strong>
           </div>
           <div class="right">
-            <span><strong>Within 30 minutes </strong></span>
+            <span><strong>54.26</strong></span>
           </div>
         </li>
       </ul>
-      <div class="update">Last update: <span id="last-update">1 Minute</span> ago</div>
+      <div class="update"> 🍱 + 🍲 = soon <span id="last-update"> v0.1.3 </span></div>
     </div>
     <div id="set-alert" class="div-hidden">
       <div class="alert">
