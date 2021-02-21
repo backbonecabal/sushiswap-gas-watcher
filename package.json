@@ -1,0 +1,21 @@
+{
+  "name": "sushi-gas-watcher",
+  "version": "1.0.0",
+  "description": "chrome extenstion",
+  "main": "manifest.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/backbonecabal/sushiswap-gas-watcher.git"
+  },
+  "author": "see contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/backbonecabal/sushiswap-gas-watcher/issues"
+  },
+  "homepage": "https://github.com/backbonecabal/sushiswap-gas-watcher#readme",
+  "dependencies": {
+  }
+}

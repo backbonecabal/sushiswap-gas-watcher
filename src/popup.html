@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SushiSwap Gas Foresight</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="./popup.js"></script>
+  </head>
+
+  <body>
+    <div id="display-gas-prices">
+      <ul>
+        <li id="rapid">
+          <div class="left">
+            <p>Critical Priority</p>
+            <strong id="price-rapid">..</strong>
+          </div>
+          <div class="right">
+            <span><strong>Next 60 seconds</strong></span>
+          </div>
+        </li>
+        <li id="fast">
+          <div class="left">
+            <p>Within seconds</p>
+            <strong id="price-fast">..</strong>
+          </div>
+          <div class="right">
+            <span><strong>Less than 180 seconds</strong></span>
+          </div>
+        </li>
+        <li id="standard">
+          <div class="left">
+            <p>Within minutes</p>
+            <strong id="price-standard">..</strong>
+          </div>
+          <div class="right">
+            <span><strong>Less than 5 Minutes</strong></span>
+          </div>
+        </li>
+        <li id="slow">
+          <div class="left">
+            <p>Low Priority</p>
+            <strong id="price-slow">..</strong>
+          </div>
+          <div class="right">
+            <span><strong>Within 30 minutes </strong></span>
+          </div>
+        </li>
+      </ul>
+      <div class="update">Last update: <span id="last-update">1 Minute</span> ago</div>
+    </div>
+    <div id="set-alert" class="div-hidden">
+      <div class="alert">
+        <p>
+          Notification Service <strong id="alert-type">alert</strong> when gas costs drop below:
+        </p>
+        <form id="alert-form">
+          <input id="alert-value" type="text" />
+          <button>Set</button>
+        </form>
+      </div>
+    </div>
+    <div id="show-alert" class="div-hidden">
+      <div class="alert">
+        <div class="row">
+          <img id="alert-cancel" src="../icons/cancel.png" alt="cancel alert" />
+          <p id="alert-text"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
