@@ -18,7 +18,6 @@ document.addEventListener('visibilitychange', () => {
 
 /**
  * Listener Function
- * @summary If the description is long, write your summary here. Otherwise, feel free to remove this.
  * @param {updateListener} [area] - Listener function that will update the popup when the storage data is changed
  */
 function updateListener(changes, area) {

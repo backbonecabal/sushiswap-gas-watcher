@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "SushiSwap Gwei Monitor",
-  "version": "0.1.3",
-  "author": "SushisSwap Contributors",
+  "name": "Backbone Gas Monitor",
+  "version": "0.2.0",
+  "author": "The  Contributors",
   "description": "Monitor Ethereum Gwei Prices and set notifications",
   "icons": {
     "16": "icons/icon16.png",
@@ -13,7 +13,7 @@
   "permissions": ["storage", "alarms", "notifications"],
   "action": {
     "default_icon": "icons/icon32.png",
-    "default_title": "SushiSwap Gwei Monitor",
+    "default_title": "Ethereum Gas  Monitor",
     "default_popup": "src/popup.html"
   },
   "background": {

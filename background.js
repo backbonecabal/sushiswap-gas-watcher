@@ -50,10 +50,10 @@ function fetchGasData() {
 // FIXME CSS COLORING
 //  @note Update Badge when gas data or selected level is updated
 SPEED_COLORS = {
-  rapid: '#00c718',
+  rapid: '#DA1E28',
   fast: '#ff7828',
-  standard: '#0060ff',
-  slow: '#9160f2',
+  standard: '#00c718',
+  slow: '#6f6f6f',
 };
 function updateBadge(value, level) {
   chrome.action.setBadgeText({ text: String(value) });
