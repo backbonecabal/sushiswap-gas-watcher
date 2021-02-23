@@ -16,6 +16,8 @@ No analytics are collected on you, zero.
 
 ![](./docs/image3.png)
 
+> Note: the bento box and bowl of miso soup are placeholders. The time value beside it is the last time the price was updated.
+
 ## Install 
 
 1. Download the `packged` zip distribution found in the releases - [backbonecabal/sushiswap-gas-watcher/releases/download/v2.0.0/backbone-gwei-chrome.zip](https://github.com/backbonecabal/sushiswap-gas-watcher/releases/download/v2.0.0/backbone-gwei-chrome.zip)
