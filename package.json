@@ -1,21 +1,23 @@
 {
-  "name": "backbone-gas-monitor",
-  "version": "0.2.0",
-  "description": "chrome extenstion",
-  "main": "manifest.json",
+  "name": "svelte-sushiswap-chrome",
+  "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "cpx -C public/** public/** && rollup -c && cpx chrome-extension/**/*.* public",
+    "dev": "rollup -c -w",
+    "start": "sirv public"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/backbonecabal/sushiswap-gas-watcher.git"
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0"
   },
-  "author": "see contributors",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/backbonecabal/sushiswap-gas-watcher/issues"
-  },
-  "homepage": "https://github.com/backbonecabal/sushiswap-gas-watcher#readme",
   "dependencies": {
+    "cpx": "^1.5.0",
+    "sirv-cli": "^1.0.0"
   }
 }
