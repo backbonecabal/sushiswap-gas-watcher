@@ -8,11 +8,11 @@
  * Fetch gas data every minute
  * @property {delayInMinutes} Integer
  * @property {periodInMinutes} Integer
- * @property {URL_GASNOW} gasonow.org - ?utm_source=:SushiSwapMonitor for tracking
+ * @property {URL_GASNOW} 
  */
 const delayInMinutes = 1;
 const periodInMinutes = 1;
-const URL_GASNOW = 'https://www.gasnow.org/api/v3/gas/price?utm_source=:SushiSwapMonitor';
+const URL_GASNOW = 'https://api.txprice.om';
 
 chrome.alarms.create('fetch_gasData', {
   delayInMinutes,
@@ -35,13 +35,14 @@ function fetchGasData() {
   fetch(URL_GASNOW)
     .then((r) => r.json())
     .then((resData) => {
-      const gasData = resData?.data;
-      const timestamp = gasData?.timestamp;
+      const gasData = resData?.blockPrices[0];
+      const timestamp = gasData?.Date.now();
       const gasPrices = {};
-      Object.keys(gasData).map((k) => {
+/**      Object.keys(gasData).map((k) => {
         if (k !== 'timestamp') {
           gasPrices[k] = Math.round(parseInt(gasData[k]) * 1e-9);
         }
+   */
       });
       chrome.storage.sync.set({ gasData: { gasPrices, timestamp } });
     });
