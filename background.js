@@ -37,7 +37,7 @@ function fetchGasData() {
     .then((resData) => {
       const gasData = resData?.blockPrices[0];
       const timestamp = gasData?.Date.now();
-      const gasPrices = {};
+      const gasPrices = input.blockPrices[0].estimatedPrices[3];
 /**      Object.keys(gasData).map((k) => {
         if (k !== 'timestamp') {
           gasPrices[k] = Math.round(parseInt(gasData[k]) * 1e-9);
